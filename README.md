@@ -99,7 +99,7 @@ OYEvent.post(name: Notification.Name(rawValue: "Method_Name"), userInfo: ["Key":
 ```swift
  OYEvent.dispose(name: Notification.Name(rawValue: "Method_Name"))
 ```
-<br/>
+&nbsp;
 ... Dispose NotificationCenter observer with target and notification method name ...
 
 ```swift
