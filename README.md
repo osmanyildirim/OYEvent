@@ -114,7 +114,7 @@ OYEvent.post(name: Notification.Name(rawValue: "Method_Name"), userInfo: ["Key":
 <br/>
 <br/>
 
-> `target` parameter is `AnyObject` instance, e.g. `UIViewController`
+> *`target`* parameter is `AnyObject` instance, e.g. `UIViewController`
 
 ```swift
  OYEvent.disposeAll(target: self)
