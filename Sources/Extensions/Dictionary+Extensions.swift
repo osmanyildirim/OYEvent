@@ -9,14 +9,14 @@ import Foundation
 
 extension Dictionary {
     /// var dict = ["Key1": "Value1", "Key2": "Value2", "Key3": "Value3"]
-    /// `dict.oy_allValues` → output  → ["Value1", "Value2", "Value3"]
+    /// `dict.allValues` → output  → ["Value1", "Value2", "Value3"]
     var allValues: [Value] {
         values.compactMap({ $0 })
     }
 
     /// var dict = ["Key1": "Value1", "Key2": "Value2", "Key3": "Value3"]
     /// `dict.remove(keys: ["Key1", "Key2"])` → output → ["Key3": "Value3"]
-    mutating func remove(keys: Key...) { //where S.Element == Key {
+    mutating func remove(keys: Key...) {
         keys.forEach { removeValue(forKey: $0) }
     }
 
